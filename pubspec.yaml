@@ -1,0 +1,26 @@
+name: elephants_mvvm_provider
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  blur: ^1.0.1
+  cupertino_icons: ^1.0.0
+  http: any
+  link_text: ^0.1.4
+  provider: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
