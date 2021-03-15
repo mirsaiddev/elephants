@@ -1,11 +1,9 @@
-import '../../constant/constants.dart';
-import 'package:http/http.dart' as _http;
+import 'package:elephants_mvvm_provider/constant/constants.dart';
 
 import '../models/elephant.dart';
-import 'ielephant_api.dart';
+import 'package:http/http.dart' as _http;
 
-class ElephantApi extends IElephantApi {
-  @override
+ class ElephantApi {
   Future<List<Elephant>> fetchElephants() async {
     final String _url = Constants.ELEPHANT_API;
 

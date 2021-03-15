@@ -1,8 +1,6 @@
+import 'package:elephants_mvvm_provider/data/repositories/elephant_repository.dart';
 import 'package:flutter/material.dart';
-
-import '../data/data_providers/elephant_api.dart';
 import '../data/models/elephant.dart';
-import '../data/repositories/elephant_repository.dart';
 
 enum ElephantState { INITIAL, LOADING, COMPLETED }
 
@@ -10,7 +8,7 @@ class ElephantViewModel with ChangeNotifier {
   ElephantRepository _elephantRepository;
 
   ElephantViewModel() {
-    _elephantRepository = ElephantRepository(elephantApi: ElephantApi());
+    _elephantRepository = ElephantRepository();
   }
 
   List<Elephant> _elephantModel;

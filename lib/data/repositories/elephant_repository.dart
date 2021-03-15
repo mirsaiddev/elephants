@@ -1,14 +1,8 @@
-import '../data_providers/elephant_api.dart';
-import '../data_providers/ielephant_api.dart';
-import '../models/elephant.dart';
-import 'ielephant_repository.dart';
+ import 'package:elephants_mvvm_provider/data/data_providers/elephant_api.dart';
+import 'package:elephants_mvvm_provider/data/models/elephant.dart';
 
-class ElephantRepository extends IElephantRepository {
-  final IElephantApi elephantApi;
-
-  ElephantRepository({this.elephantApi});
-
-  @override
+class ElephantRepository {
+  
   Future fetchElephants() {
     Future<List<Elephant>> elephants = ElephantApi().fetchElephants();
 
